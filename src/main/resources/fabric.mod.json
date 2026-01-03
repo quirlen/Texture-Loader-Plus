@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "texture-loader-plus",
+	"version": "1.0.0",
+	"name": "Texture Loader Plus",
+	"description": "Load PSD, TIFF, and other image formats as textures in Minecraft. Aimed at resource pack creators.",
+	"authors": [
+		"Quirlen"
+	],
+	"contact": {
+		"sources": "https://github.com/quirlen/Texture-Loader-Plus"
+	},
+	"icon": "assets/texture-loader-plus/icon.png",
+	"entrypoints": {
+		"main": [
+			"com.quirlen.textureloaderplus.TextureLoaderPlusMod"
+		],
+		"client": [
+			"com.quirlen.textureloaderplus.TextureLoaderPlusClient"
+		],
+		"modmenu": [
+			"com.quirlen.textureloaderplus.TextureLoaderPlusModMenu"
+		]
+	},
+	"mixins": [
+		"texture-loader-plus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": ">=1.21 <=1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
